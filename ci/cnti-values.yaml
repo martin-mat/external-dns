@@ -1,0 +1,9 @@
+# Values for the CNTi Test Suite run (.github/workflows/cnti.yml): the
+# in-memory provider, which needs no DNS service or cloud account, and
+# resource limits next to the chart's secure defaults.
+provider:
+  name: inmemory
+policy: upsert-only
+resources:
+  requests: {cpu: 50m, memory: 64Mi}
+  limits: {cpu: 500m, memory: 256Mi}
