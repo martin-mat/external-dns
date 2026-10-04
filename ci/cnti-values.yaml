@@ -1,4 +1,6 @@
-# Only what the run needs to work without a cloud account: the in-memory
-# provider. Everything else is the chart's defaults.
+# Only what the chart requires and the run needs without a cloud account: the
+# in-memory provider, and the policy (required since chart 1.23.0; upsert-only
+# was its default before). Everything else is the chart's defaults.
 provider:
   name: inmemory
+policy: upsert-only
