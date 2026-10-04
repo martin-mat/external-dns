@@ -1,0 +1,4 @@
+# Only what the run needs to work without a cloud account: the in-memory
+# provider. Everything else is the chart's defaults.
+provider:
+  name: inmemory
