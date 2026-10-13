@@ -1,0 +1,4 @@
+# The in-memory provider: the default provider needs a cloud account and
+# credentials; nothing else is changed.
+provider:
+  name: inmemory
